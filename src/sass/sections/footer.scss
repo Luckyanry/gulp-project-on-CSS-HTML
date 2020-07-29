@@ -1,0 +1,104 @@
+.hell-en {
+  text-align: center;
+}
+.hell-tel {
+  display: flex;
+  align-items: center;
+}
+.hell-svg {
+  width: 20px;
+  height: 20px;
+  fill: $decore-color;
+  margin-right: 8px;
+}
+@media (max-width: 767px) {
+  .hell-en {
+    padding: 27px 0 14px;
+  }
+  .hell-tel {
+    justify-content: center;
+    margin-bottom: 19px;
+  }
+  .hell-en img {
+    margin: 0 auto;
+  }
+  .instagram-link {
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+}
+.hell-number {
+  font-size: 18px;
+  font-family: $main-font;
+  color: $bg-second-color;
+  font-weight: 700;
+}
+.instagram-link {
+  width: 37px;
+  height: 37px;
+  background-image: url('../images/icon_insta.svg');
+  background-position: center;
+}
+.copyright {
+  background-color: $bg-second-color;
+}
+.rights-reserved {
+  font-size: 11px;
+  font-family: $main-font;
+  font-weight: 500;
+  color: #fdfefe6b;
+  text-align: center;
+  line-height: 72px;
+}
+@media (min-width: 768px) {
+  .hell-en {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row-reverse;
+    padding: 35px 0;
+  }
+  .footer-logo-link {
+    margin-right: 80px;
+   }
+  .hell-tel::after {
+    content: '';
+    width: 1px;
+    height: 29px;
+    background-color: rgb(224, 224, 224);
+    margin: 0 30px;
+  }
+  .hell-number {
+    font-size: 20px;
+  }
+  .footer-contact {
+    display: flex;
+    align-items: center;
+  }
+  .rights-reserved {
+    text-align: left;
+  }
+}
+@media (min-width: 1280px) {
+  .footer-logo-link {
+    margin-right: 254px;
+   }
+  .hell-svg {
+    width: 32px;
+    height: 32px;
+    margin-right: 18px;
+  }
+  .hell-number {
+    font-size: 27px;
+    line-height: 38px;
+    letter-spacing: 1.35px;
+  }
+  .rights-reserved {
+    font-size: 15px;
+  }
+}
+@media (min-width: 1680px) {
+  .footer-logo-link {
+    margin-right: 306px;
+   }
+}

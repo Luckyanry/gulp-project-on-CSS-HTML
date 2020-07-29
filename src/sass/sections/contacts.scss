@@ -1,0 +1,191 @@
+.contacts {
+  background-image: url('../images/contacts-sm.png');
+  background-color: #111517;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 52px 0;
+}
+@media (max-width: 767px) {
+  .contacts {
+    background-position: center;
+  }
+  .contacts-title {
+    padding: 0 20px 0;
+  }
+}
+@media (max-width: 1679px) {
+  .contacts {
+    background-position: center;
+  }
+}
+.contacts-title {
+  font-size: 14px;
+  font-weight: 800;
+  font-family: $main-font;
+  line-height: 26px;
+  color: $reverse-text-color;
+  letter-spacing: 0.7px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.contacts-span,
+.request-span {
+  color: $decore-text-color;
+}
+.request {
+  font-size: 11px;
+  font-weight: 600;
+  font-family: $main-font;
+  line-height: 20px;
+  color: $reverse-text-color;
+  letter-spacing: 0.7px;
+  text-align: center;
+  margin-bottom: 26px;
+}
+// form
+.request-information {
+  margin-bottom: 55px;
+}
+.request-input {
+  width: 280px;
+  height: 50px;
+  background-color: transparent;
+  border-width: 1px;
+  border-color: $bg-color;
+  border-style: solid;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.2;
+  font-family: $main-font;
+  letter-spacing: 0.65px;
+  color: $bg-color;
+  padding-left: 22px;
+}
+.request-input:nth-child(1) {
+  margin-bottom: 20px;
+}
+input::placeholder {
+  font-size: 13px;
+  font-weight: 600;
+  font-family: $main-font;
+  letter-spacing: 0.65px;
+  color: $bg-color;
+}
+.contact-form-button {
+  display: block;
+  margin: 0 auto;
+  width: 248px;
+  height: 48px;
+  letter-spacing: 1.46px;
+  background-color: $decore-color;
+  border-width: 2px;
+  border-color: $decore-color;
+  border-style: solid;
+  font-size: 11px;
+  font-family: $secondary-font;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  transition: all 300ms linear;
+}
+.contact-form-button:hover {
+  background-color: $bg-color;
+  color: $decore-text-color;
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  .contacts {
+    background-image: url('../images/contacts-md.png');
+  }
+  .contacts-title {
+    font-size: 22px;
+    line-height: 38px;
+    padding: 0 70px;
+  }
+  .request {
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 600;
+    text-align: left;
+  }
+  .request-style {
+    display: inline-block;
+  }
+  .request-input {
+    display: block;
+    margin: 0 auto;
+    width: 400px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+  .request {
+    padding-left: 120px;
+  }
+}
+@media (min-width: 1280px) {
+  .contacts {
+    background-image: url('../images/contacts-lg.png');
+    padding: 86px 0 88px;
+  }
+  .contacts-title {
+    font-size: 38px;
+    line-height: 50px;
+    padding: 0 140px;
+    margin-bottom: 50px;
+  }
+  .request {
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 52px;
+    text-align: center;
+  }
+  .request-information {
+    margin-bottom: 57px;
+  }
+  .request-input {
+    width: 620px;
+    height: 70px;
+    font-size: 21px;
+    line-height: 27px;
+  }
+  .request-input:nth-child(1) {
+    margin-bottom: 28px;
+  }
+  input::placeholder {
+    font-size: 21px;
+    line-height: 68px;
+  }
+  .contact-form-button {
+    width: 350px;
+    height: 70px;
+    font-size: 14px;
+    letter-spacing: 2.8px;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1679px) {
+  .request {
+    padding: 0 330px;
+  }
+}
+@media (min-width: 1680px) {
+  .contacts {
+    padding: 128px 0 100px;
+    background-image: url('../images/contacts-lg@1,5x.png');
+  }
+  .contacts-title {
+    padding: 0 186px;
+    margin-bottom: 66px;
+  }
+  .request {
+    font-size: 25px;
+  }
+}
+.request-input:required:focus:valid {
+  outline-color: green;
+  border-color: green;
+}
+.request-input:required:focus:invalid {
+  outline-color:  red;
+  border-color: red;
+}
